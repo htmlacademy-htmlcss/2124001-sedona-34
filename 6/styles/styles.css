@@ -1,0 +1,367 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px ;
+  line-height: 21px ;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.logo {
+  width: 139x;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.navigation-list {
+  display: flex;
+  width: 490px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.navigation-user {
+  display: flex;
+  width: 300px;
+  margin-left: auto;
+
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.navigation-link-search {
+  padding: 9px 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.main-index {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url(../images/image-background.jpg) ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.welcome {
+ display: block;
+ margin: 0 auto;
+}
+
+.divider-text h2{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 63px;
+  margin-bottom: 31px;
+}
+.divider-text p{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 90px;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-list-middle {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-list-bottom {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages-number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-item {
+  width: 400px;
+  padding-top: 80px;
+  padding-bottom: 81px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.advantages-item-blue {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  margin: 0;
+}
+
+.advantages-item-white {
+  background-color: #FFFFFF;
+}
+
+.advantages-item-white-grey  {
+  background-color: #83B3D31F;
+}
+
+.advantages-item-grey {
+  background-color: #83B3D333;
+}
+
+.search {
+  font-weight: 700;
+  text-transform: uppercase;;
+  margin-bottom: 93px;
+}
+
+.search-block {
+  display: block;
+  width: 1200px;
+  margin: 0;
+
+}
+
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 91px;
+  margin-bottom: 0;
+}
+
+.search-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: none;
+  margin-top: 29px;
+  margin-bottom: 56px;
+}
+
+.search-button {
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #756157;
+  width: 544px;
+  height: 36px;
+  padding: 12px;
+  padding-left: 140px;
+  padding-right: 140px;
+  border-radius: 4px;
+}
+
+.page-footer {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+}
+
+.page-footer-newsletter {
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.newsletter {
+  background-color: #000000;
+  background-image: url(../images/image-background-blur.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.footer-newsletter {
+  color:  #FFFFFF ;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 800px;
+  height: 223px;
+}
+
+.page-footer-title {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.page-footer-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.newsletter-form {
+  font-family: inherit;
+  font-weight: 400;
+}
+.field {
+  font-family: inherit;
+}
+.button-newsletter-button span {
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.social-container {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social ul {
+  list-style: none;
+  width: 150px;
+  margin-left: 69px;
+  margin-top: 45px;
+  margin-right: 42px;
+  margin-bottom: 35px;
+}
+
+.number-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-developer {
+  margin-left: 41px;
+  margin-top: 48px;
+  margin-right: 69px;
+  margin-bottom: 38px;
+}
