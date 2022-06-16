@@ -70,20 +70,35 @@ body {
 .logo {
   width: 139x;
   margin-right: 30px;
+  margin-left: 70px;
   padding: 0;
 }
 
 .navigation-list {
   display: flex;
-  width: 490px;
+  width: 390px;
   margin: 0;
+  padding: 0;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-item-catalog {
+  margin-right: 62px ;
 }
 
 .navigation-user {
   display: flex;
-  width: 300px;
-  margin-left: auto;
+  width: 263px;
+  margin-left: 273px;
+  margin-right: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -337,26 +352,42 @@ body {
   height: 120px;
   margin: 0 auto;
   justify-content: space-between;
+
 }
 
 .footer-social ul {
   list-style: none;
-  width: 150px;
-  margin-left: 69px;
-  margin-top: 45px;
-  margin-right: 42px;
-  margin-bottom: 35px;
+  width: 142px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.number-tel {
+.footer-social-list {
+  margin-top: 45px;
+  margin-bottom: 35px;
+  margin-left: 70px;
+  margin-right: 41px;
+}
+
+.footer-contacts {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 40px;
+  margin: 0;
+}
+
+.number-tel {
+  margin: 0;
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .footer-developer {
