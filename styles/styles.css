@@ -372,15 +372,15 @@ body {
 
 .social-container {
   display: flex;
-  width: 1200px;
+  width: 1060px;
+  height: 50px;
+  padding: 40px 70px 30px 70px;
   margin: 0 auto;
   justify-content: space-between;
 }
 
 .footer-social ul {
   list-style: none;
-  min-width: 142px;
-  height: 40px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -389,14 +389,12 @@ body {
 }
 
 .footer-social-list {
-  margin-top: 45px;
-  margin-bottom: 35px;
-  margin-left: 70px;
-  margin-right: 41px;
+  align-self: center;
+
 }
 
 .social-network {
-  padding: 1px 10px 1px 10px;
+  padding: 10px
 }
 
 
@@ -409,21 +407,23 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  margin-left: 194px;
+  margin-right: 194px;
 }
 
 .number-tel {
   width: 331px;
   height: 40px;
-  margin: 0;
-  margin-bottom: 30px;
-  margin-top: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-self: center;
 }
 
 
 
 .footer-developer-logo {
-  padding: 15px 10px 15px 10px;
-  margin-left: 41px;
-  margin-top: 40px;
-  margin-right: 69px;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  align-self: center;
 }
