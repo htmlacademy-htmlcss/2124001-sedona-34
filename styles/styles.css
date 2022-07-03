@@ -35,8 +35,8 @@ html {
   position: absolute;
   margin: -1px;
   padding: 0;
-  width: 1;
-  height: 1;
+  width: 0;
+  height: 0;
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -137,6 +137,18 @@ body {
   outline: none;
 }
 
+.navigation-link:hover {
+  background-color: #F2F2F2;
+}
+
+.navigation-link:focus {
+  background-color: #F2F2F2;
+}
+
+.navigation-link:active {
+  background-color: #E5E5E5;
+}
+
 .navigation-link-user {
   width: 42px;
   height: 66px;
@@ -176,15 +188,21 @@ body {
   background-color: #756157;
   color: #FFFFFF4D;
 }
+
+.navigation-link-search:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
 .navigation-link-current {
   position: relative;
 }
 .navigation-link-current::before {
   position: absolute;
   bottom: 0px;
-  left: 0;
+  left: 10x;
   height: 2px;
-  width: 100%;
+  width: 71%;
   background-color: #756157;
   content: "";
 }
@@ -380,6 +398,11 @@ body {
   color: #FFFFFF4D;
 }
 
+.search-button:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
 .page-footer {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -477,6 +500,11 @@ body {
 .button-newsletter:active {
   background-color: #82B3D3;
   color: #FFFFFF4D;
+}
+
+.button-newsletter:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 .subscribe {
