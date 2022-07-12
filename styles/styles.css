@@ -413,7 +413,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);;
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal {
@@ -439,7 +439,7 @@ body {
 
 .modal-close-button {
   background-color: #F2F2F2;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   border-radius: 50%;
   width: 53px;
   height: 53px;
@@ -449,17 +449,20 @@ body {
   top: 60px;
   right: 70px;
   cursor: pointer;
+  outline: none;
 }
 
 .icon-close-button {
   display: block;
   position: absolute;
   padding: 0;
-  top: 20px;
-  right: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 13px;
   height: 13px;
   fill: #000000;
+
 }
 
 .modal-close-button:hover {
@@ -474,6 +477,7 @@ body {
 .modal-close-button:active .icon-close-button{
   background-color: #E6E6E6;
   fill: gray;
+  border-color: #FFFFFF;
 }
 
 .modal-title {
@@ -555,6 +559,14 @@ body {
   display: block;
 }
 
+.tooltip-info {
+  z-index: 10;
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 8px;
+}
+
 .tooltip-toggle:hover .tooltip-icon {
   fill: #68A2CA;
 }
@@ -608,13 +620,41 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
-  height: 50px;
-  width: 401px;
+  height: 47px;
+  width: 420px;
   border-radius: 4px;
-  border: none;
+  border: 3px solid transparent;
   padding: 0;
-  padding-left: 19px;
+  padding-left: 16px;
   outline: none;
+}
+
+.form-date:hover {
+  background-color: #E6E6E6;
+}
+
+.form-date:focus {
+  background-color: #E6E6E6;
+  border-color: #83B3D3;
+  fill: #ffffff;
+}
+
+.form-date:active {
+  background-color: #FFFFFF;
+  border-color: #000000;
+  color: #000000;
+}
+
+.form-date-calendar{
+  background-image: url(../images/icon/icon-calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  width: 420px;
+  height: 50px;
+  margin-left: auto;
+  padding: 0 18px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .number-people {
@@ -640,20 +680,61 @@ body {
   grid-column-start: 1;
   grid-column-end: 2;
   cursor: pointer;
-  background-image: url("../images/icon/icon-minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: ;
-  height: ;
-  position: absolute;
 }
 
+.minus-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  border: 3px solid transparent;
+  padding: 9px 3px 9px 3px;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.minus-icon:hover{
+  fill: #000000;
+}
+
+.minus:focus .minus-icon {
+  border-color: #83B3D3;
+  color: #000000;
+  border-radius: 4px;
+}
+
+.minus:active .minus-icon{
+  background-color: #F2F2F2;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.plus-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  border: 3px solid transparent;
+  padding: 3px 3px 3px 3px;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.plus-icon:hover {
+  fill: #000000;
+}
+
+.plus:focus .plus-icon {
+  border-color: #83B3D3;
+  color: #000000;
+  border-radius: 4px;
+}
+
+.plus:active .plus-icon{
+  background-color: #F2F2F2;
+  fill: rgba(0, 0, 0, 0.3);
+}
 
 .plus {
   background-color: #F2F2F2;
   height: 50px;
   width: 61px;
-  border: none;
+  border: 3px solid transparent;
   border-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -663,12 +744,6 @@ body {
   grid-column-start: 3;
   grid-column-end: 4;
   cursor: pointer;
-  background-image: url("../images/icon/icon-plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: ;
-  height: ;
-
 }
 
 .form-number {
@@ -685,8 +760,9 @@ body {
   outline: none;
   grid-column-start: 2;
   grid-column-end: 3;
-
 }
+
+
 
 .search-form-button {
  display: inline-block;
@@ -701,8 +777,13 @@ body {
  padding: 0px;
  border-radius: 10px;
  outline: none;
- border: none;
+ border: 3px solid transparent ;
  cursor: pointer;
+ font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .search-form-button:hover {
@@ -712,24 +793,17 @@ body {
 .search-form-button:focus {
   background-color: #68A2CA;
   border-color: #756257;
+  fill: #ffffff;
 }
 
 .search-form-button:active {
-  background-color: #82B3D3;
+  background-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .search-form-button:disabled {
   background-color: #E5E5E5;
   color: #FFFFFF;
-}
-
-.search-hotel {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
 }
 
 .modal-container-close {

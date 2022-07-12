@@ -215,15 +215,15 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="httpls://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
-          <label for="start"><span class="modal-text">Дата Заезда:</span></label>
-<input class="form-date" type="text" id="date-entry" name="enter-date" required
+          <label class="modal-text" for="start">Дата Заезда:</label>
+<input class="form-date form-date-calendar" type="text" id="date-entry" name="enter-date" required
        value="27 апреля 2020"
        min="2020-04-01" max="2022-09-01">
           </p>
             <h3 class="warning wrong-date">Мы не можем отправить вас в прошлое.</h3>
           <p class="field-group">
        <label for="start"><span class="modal-text">Дата Выезда:</span></label>
-<input class="form-date" type="text" id="date-end" name="enter-date" required
+<input class="form-date form-date-calendar" type="text" id="date-end" name="enter-date" required
        value="1 сентября 2021"
        min="2020-04-01" max="2022-09-01">
           </p>
@@ -231,15 +231,26 @@
          <div class="modal-number-form">
           <h3 class="modal-text modal-text-adults">Взрослые:</h3>
           <div class="number-people number-people-adults">
-            <button class="minus"><span class="visually-hidden">-</span></button>
-            <input class="form-number" disabled value="2" type="text">
-            <button class="plus"><span class="visually-hidden">+</span></button>
+            <button class="minus">
+              <svg class="minus-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path  d="M0 0v1h13V0H0Z" />
+              </svg>
+              <span class="visually-hidden">-</span>
+            </button>
+            <input class="form-number" disabled value="1" type="text">
+            <button class="plus">
+              <svg class="plus-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"  />
+              </svg>
+              <span class="visually-hidden">+</span>
+            </button>
           </div>
             <span class="modal-text-children">
               <h3 class="modal-text modal-text-children">Дети:</h3>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button"
                 aria-labelledby="tooltip-label">
+                <svg class="tooltip-info" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs>
+                    <clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
                   <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25"  xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12.5" cy="12.5" r="12.5" />
                   </svg>
@@ -250,15 +261,23 @@
               </span>
             </span>
           <div class="number-people number-people-children">
-            <button class="minus"><span class="visually-hidden">-</span></button>
+            <button class="minus">
+              <svg class="minus-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path  d="M0 0v1h13V0H0Z" />
+              </svg>
+              <span class="visually-hidden">-</span>
+            </button>
             <input class="form-number" disabled value="1" type="text">
-            <button class="plus"><span class="visually-hidden">+</span></button>
+            <button class="plus">
+              <svg class="plus-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"  />
+              </svg>
+              <span class="visually-hidden">+</span>
+            </button>
           </div>
         </div>
 
           <button class="button search-form-button"
           type="submit">
-          <span class="search-hotel">Найти</span>
+          Найти
         </button>
         </form>
         </section>
