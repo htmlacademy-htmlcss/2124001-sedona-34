@@ -807,7 +807,7 @@ body {
 }
 
 .modal-container-close {
-  display: ;
+  display: none;
 }
 
 .page-footer {
